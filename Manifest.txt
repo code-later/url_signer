@@ -1,0 +1,10 @@
+COPYING
+History.txt
+MIT-LICENSE
+Manifest.txt
+PostInstall.txt
+README.rdoc
+Rakefile
+lib/url_signer.rb
+test/url_signer_test.rb
+url_signer.gemspec
