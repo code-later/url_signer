@@ -6,5 +6,6 @@ PostInstall.txt
 README.rdoc
 Rakefile
 lib/url_signer.rb
+test/test_helper.rb
 test/url_signer_test.rb
 url_signer.gemspec

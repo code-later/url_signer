@@ -15,7 +15,6 @@ The UrlSigner class was designed to create tamper-proof URLs, that can only be g
   >> signer.valid?(signed_url)
   => true
   
-
 == REQUIREMENTS:
 
 * ActiveSupport
