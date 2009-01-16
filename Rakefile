@@ -27,5 +27,5 @@ Rake::RDocTask.new do |task|
   task.main = 'README.rdoc'
   task.title = "UrlSigner #{UrlSigner::VERSION}"
   task.rdoc_dir = 'doc'
-  task.rdoc_files.include('README.rdoc', 'COPYING', 'MIT-LICENSE', "lib/url_signer/*.rb")
+  task.rdoc_files.include('README.rdoc', 'COPYING', 'MIT-LICENSE',"lib/**/*.rb")
 end

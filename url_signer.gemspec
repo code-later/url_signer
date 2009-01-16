@@ -7,12 +7,12 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Caroo GmbH"]
   s.date = %q{2009-01-16}
-  s.description = %q{FIX (describe your package)}
+  s.description = %q{The UrlSigner class was designed to create tamper-proof URLs, that can only be generated and validated by parties that know the shared secret.}
   s.email = ["dev@pkw.de"]
   s.extra_rdoc_files = ["History.txt", "Manifest.txt", "PostInstall.txt", "README.rdoc"]
   s.files = ["COPYING", "History.txt", "MIT-LICENSE", "Manifest.txt", "PostInstall.txt", "README.rdoc", "Rakefile", "lib/url_signer.rb", "test/url_signer_test.rb", "url_signer.gemspec"]
   s.has_rdoc = true
-  s.homepage = %q{FIX (url)}
+  s.homepage = %q{http://github.com/pkwde/url_signer}
   s.rdoc_options = ["--main", "README.rdoc"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{url_signer}

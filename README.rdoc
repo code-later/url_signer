@@ -1,32 +1,35 @@
 = UrlSigner
 
-* FIX (url)
+* http://github.com/pkwde/url_signer
 
 == DESCRIPTION:
 
-FIX (describe your package)
-
-== FEATURES/PROBLEMS:
-
-* FIX (list of features or problems)
+The UrlSigner class was designed to create tamper-proof URLs, that can only be generated and validated by parties that know the shared secret.
 
 == SYNOPSIS:
 
-  FIX (code sample of usage)
+  >> signer = UrlSigner.new('secret')
+  => #<UrlSigner:0x1b0506c>
+  >> signed_url = signer.sign("http://localhost/testfile.jpg")
+  => "http://localhost/testfile_cd45e1a2.jpg"
+  >> signer.valid?(signed_url)
+  => true
+  
 
 == REQUIREMENTS:
 
-* FIX (list of requirements)
+* ActiveSupport
 
 == INSTALL:
 
-* FIX (sudo gem install, anything else)
+* gem sources -a http://gems.github.com
+* sudo gem install pkwde-url_signer
 
 == LICENSE:
 
 (The MIT License)
 
-Copyright (c) 2009 FIX
+Copyright (c) 2009 Caroo GmbH
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
