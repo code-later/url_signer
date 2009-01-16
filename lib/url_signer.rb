@@ -1,9 +1,13 @@
+require 'rubygems'
+require 'activesupport'
 require 'uri'
 require 'digest/sha1'
 
 class UrlSigner
   
-  VERSION = "0.0.1"
+  VERSION = "0.1.0"
+  
+  cattr_accessor :secret
   
   def self.sign(url)
     parsed_url = URI.parse(url)
@@ -21,6 +25,6 @@ class UrlSigner
   end
   
   def self.hash(string)
-    Digest::SHA1.hexdigest(string)[0..5]
+    Digest::SHA1.hexdigest(string+secret)[0..5]
   end
 end
